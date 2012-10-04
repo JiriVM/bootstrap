@@ -205,7 +205,7 @@ and your footer gets pushed down a bit more, creating vertical scroll bars in th
   height: 60px;
   overflow: hidden;
   line-height: 60px;
-  border-top: 1px solid #c3ccd0;
+  border-top: 1px solid #777;
   clear:both;
   }
 
@@ -284,8 +284,8 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   padding: 40px;
   padding-bottom: 20px;
 
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
 }
 
 .intro .title {
@@ -412,7 +412,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 *:first-child + html .clearfix { min-height: 1%; } /* IE7 */
 
 .icon {
-  background: transparent url(images/icons.png) no-repeat 0 0;
+  background: transparent url(images/beta.gif) no-repeat 0 0;
   width: 20px;
   height: 20px;
   display: block;
