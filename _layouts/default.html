@@ -3,22 +3,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='UTF-8'/>
-  <title>Poole &middot; Serving Jekyll faithfully</title>
-  <link rel='shortcut icon' href='{{site.baseurl}}/images/favicon.ico' type='image/x-icon' />
-  <link rel='stylesheet' href='{{site.baseurl}}/fonts/open-sans.css'>
-  <link rel='stylesheet' href='{{site.baseurl}}/app.css'>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>bootstrap</title>
+	<meta name="description" content="">
+	<meta name="author" content="Jiri Vanmeerbeeck">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<link rel='shortcut icon' href='{{site.baseurl}}/images/favicon.ico' type='image/x-icon' />
+	<link rel='stylesheet' href='{{site.baseurl}}/fonts/open-sans.css'>
+	<link rel='stylesheet' href='{{site.baseurl}}/app.css'>
+	
+	<link href="photoswipe/styles.css" type="text/css" rel="stylesheet" />   	
+	<link href="photoswipe/photoswipe.css" type="text/css" rel="stylesheet" />   	
+	<script src="photoswipe/lib/klass.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="photoswipe/code.photoswipe.jquery-3.0.5.min.js"></script>
+	<script src="photoswipe/flickr-gallery-ps.js"></script>
+	<script type="text/javascript">
+		(function(window, $, PhotoSwipe){
+			
+			$(document).ready(function(){
+				
+				var options = {};
+				$("#Gallery a").photoSwipe(options);
+			
+			});
+				
+		}(window, window.jQuery, window.Code.PhotoSwipe));	
+	</script>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
   <div id='container'>
 
     <div id="header">
       <div class="navigation">
-        <a href="{{site.baseurl}}" class="title">Prose Bootstrap</a>
+        <a href="{{site.baseurl}}" class="title">Bootstrap</a>
       </div>
     </div>
 
     <div id='main'>{{content}}</div>
+    
+  	<script src="http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=007764f4820bac739bbcf6d97a8c0a91&photoset_id=72157631681739649&format=json&extras=original_format"></script>
+          	
   </div>
 
   <div id='footer'>
