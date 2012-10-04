@@ -47,8 +47,8 @@ html {
   Typography
 ---------------------------------------------*/
 html,body {
-  color: #7A8387;
-  background: #e7eef2;
+  color: #777;
+  background: #fff;
   -webkit-font-smoothing: antialiased;
   height: 100%;
   line-height: 1.5em;
@@ -121,6 +121,19 @@ p {
 
 /* ------------------------------------------
   Globals
+  
+    background-color: #000000;
+  
+  	background-color: #FF5B54;
+  
+  	background-color: #8A4E77;
+  
+  	background-color: #36779D;
+  
+  	background-color: #56B2BD;
+  
+  	background-color: #6ABC8B;
+  	
 ---------------------------------------------*/
 
 /* Top Branding/Navigation */
@@ -131,9 +144,11 @@ p {
   left: 0;
   padding: 0 20px;
   height: 30px;
-  background: #667880;
+  background: #FF5B54;
   overflow: visible;
   }
+
+
 
 
 #header a.title {
@@ -265,13 +280,12 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 .intro {
   margin-top: 50px;
-  background: #E0E7EB;
-  /*background: #fff;*/
+  background: #fff;
   padding: 40px;
   padding-bottom: 20px;
 
-  border-top: 1px solid #c3ccd0;
-  border-bottom: 1px solid #c3ccd0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .intro .title {
