@@ -412,7 +412,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 *:first-child + html .clearfix { min-height: 1%; } /* IE7 */
 
 .icon {
-  background: transparent url(images/beta.gif) no-repeat 0 0;
+  background: transparent url(images/icons.png) no-repeat 0 0;
   width: 20px;
   height: 20px;
   display: block;
